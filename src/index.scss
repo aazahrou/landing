@@ -1,0 +1,60 @@
+@font-face {
+  font-family: OpenSans;
+  src: url('fonts/OpenSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: OpenSansSemibold;
+  src: url('fonts/OpenSans-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url('fonts/OpenSans-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: OpenSansExtraBold;
+  src: url('fonts/OpenSans-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Favorit;
+  src: url('fonts/favorit-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: Favorit;
+  font-weight: bold;
+  src: url('fonts/favorit-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: FavoritBold;
+  font-weight: bold;
+  src: url('fonts/favorit-bold.woff') format('woff');
+}
+
+body {
+  font-family: OpenSans, Fallback, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: OpenSansBold, Fallback, sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: OpenSans, Fallback, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+p {
+  font-family: OpenSansSemibold, Fallback, sans-serif;
+  font-size: 16px;
+}

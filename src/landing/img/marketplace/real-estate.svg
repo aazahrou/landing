@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 514.569 235.757">
+  <defs>
+    <linearGradient id="linear-gradient" x1="57.743" y1="210.033" x2="57.743" y2="-39.032" gradientUnits="userSpaceOnUse">
+      <stop offset="0.001" stop-color="#02bda5" stop-opacity="0"/>
+      <stop offset="1" stop-color="#02bda5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="483.875" y1="225.766" x2="483.875" y2="59.399" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="-4940.97" y1="132.156" x2="-4940.97" y2="219.048" gradientTransform="matrix(1, 0, 0, -1, 5173.357, 412.038)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="399.068" y1="94.011" x2="339.867" y2="168.164" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="53.776" y1="237.392" x2="53.776" y2="77.889" xlink:href="#linear-gradient"/>
+  </defs>
+  <title>change-real-estate</title>
+  <g id="change-illustrations">
+    <g id="change-real-estate">
+      <path id="c-i_dg-o" data-name="c-i dg-o" d="M115.486,48.525C103.236,2.259,46.58-11.248,46.775,9.4S24.486,15.63,14.324,34.641,24.483,76.354,6.061,94.422,17.474,136.783,13.4,148.6c-9.833,28.517,26.82,41.734,26.82,85.492l22.289-.1Z" fill="url(#linear-gradient)"/>
+      <path id="c-i_dg-o-2" data-name="c-i dg-o" d="M488.522,235a17.084,17.084,0,0,0,15.62-10.106c19.256-43.333,6.749-54.1,2.515-63.247-8.352-18.05,9.993-27.365-4.221-49.591s1.148-28.754-10.373-41.044-32.9,20.1-31.108,45.7-13.231,29.507-2.3,53.767S432.408,218.1,471.709,235Z" fill="url(#linear-gradient-2)"/>
+      <path id="c-i_llg" data-name="c-i llg" d="M453.353,96.534l27.479,48.4A31.948,31.948,0,0,1,485,160.709V235H367.887l-35.031-82.724v-61.7H443.1A11.785,11.785,0,0,1,453.353,96.534Z" fill="#b8f5e3"/>
+      <path id="c-i_white" data-name="c-i white" d="M332.856,90.568l30.866,54.368a31.948,31.948,0,0,1,4.165,15.773V235H297.824V160.709a31.948,31.948,0,0,1,4.165-15.773Z" fill="#fff"/>
+      <rect id="c-i_mg" data-name="c-i mg" x="437.86" y="174.092" width="24.302" height="36.435" transform="translate(900.021 384.62) rotate(-180)" fill="#46d8bc"/>
+      <rect id="c-i_mg-2" data-name="c-i mg" x="390.722" y="174.092" width="24.302" height="36.435" transform="translate(805.747 384.62) rotate(-180)" fill="#46d8bc"/>
+      <rect id="c-i_llg-2" data-name="c-i llg" x="137.421" y="90.568" width="195.458" height="144.429" transform="translate(470.301 325.565) rotate(-180)" fill="#b8f5e3"/>
+      <path id="c-i_mmg" data-name="c-i mmg" d="M137.421,49.426H307.6a8.907,8.907,0,0,1,8.036,5.065L332.88,90.568H137.421Z" fill="#69e5c8"/>
+      <path id="c-i_lllg" data-name="c-i lllg" d="M72.686,49.426h64.735V90.568H47.4L64.65,54.491A8.907,8.907,0,0,1,72.686,49.426Z" fill="#e5f9f3"/>
+      <rect id="c-i_mg-3" data-name="c-i mg" x="276.331" y="115.857" width="32.149" height="41.281" transform="translate(584.811 272.995) rotate(-180)" fill="#46d8bc"/>
+      <rect id="c-i_mg-4" data-name="c-i mg" x="219.782" y="115.529" width="32.149" height="41.281" transform="translate(471.714 272.339) rotate(-180)" fill="#46d8bc"/>
+      <rect id="c-i_mg-5" data-name="c-i mg" x="163.233" y="115.529" width="32.149" height="41.281" transform="translate(358.616 272.339) rotate(-180)" fill="#46d8bc"/>
+      <rect id="c-i_white-2" data-name="c-i white" x="219.782" y="177.041" width="32.155" height="57.956" transform="translate(471.719 412.038) rotate(-180)" fill="#fff"/>
+      <rect id="c-i_dg-o-3" data-name="c-i dg-o" x="219.782" y="177.041" width="25.21" height="57.956" transform="translate(464.774 412.038) rotate(-180)" fill="url(#linear-gradient-3)"/>
+      <path id="c-i_mg-6" data-name="c-i mg" d="M413.392,90.568h21.015a0,0,0,0,1,0,0v29.117a0,0,0,0,1,0,0H417.692a4.3,4.3,0,0,1-4.3-4.3V90.568A0,0,0,0,1,413.392,90.568Z" transform="translate(847.8 210.252) rotate(-180)" fill="#46d8bc"/>
+      <path id="c-i_white-3" data-name="c-i white" d="M404.688,104.715l8.7,14.969V90.568h-6.28a4.228,4.228,0,0,0-4.228,4.228v3.234A13.3,13.3,0,0,0,404.688,104.715Z" fill="#fff"/>
+      <polygon id="c-i_dg-o-4" data-name="c-i dg-o" points="332.856 90.568 355.472 90.568 372.01 103.216 355.472 130.405 355.472 130.405 355.472 234.997 332.88 234.997 332.88 90.617 332.856 90.568" fill="url(#linear-gradient-4)"/>
+      <rect id="c-i_mg-7" data-name="c-i mg" x="219.782" y="226.14" width="42.009" height="8.856" transform="translate(481.574 461.137) rotate(-180)" fill="#46d8bc"/>
+      <rect id="c-i_white-4" data-name="c-i white" x="210.719" y="226.14" width="9.063" height="9.063" transform="translate(430.501 461.344) rotate(-180)" fill="#fff"/>
+      <path id="c-i_white-5" data-name="c-i white" d="M47.4,90.568v35.258a56.474,56.474,0,0,0,3.446,18.9c4.351,12.237-2.174,18.918,3.4,30.959,3.3,7.139,20.678,16.092,8.095,48.909A16.009,16.009,0,0,1,47.4,234.887h0V235h90.017V90.568Z" fill="#fff"/>
+      <path d="M78.614,162.449c-8.02-17.334,4.446-25.59-8.373-46.518-.207-.338-.4-.67-.622-1.015C55.748,93.227,70.738,86.856,59.5,74.863s-32.1,19.613-30.356,44.6-18.5,28.794-7.84,52.467c5.884,13.064-1.572,22.649-6.066,33.16-6.038,14.123,4.552,29.8,19.911,29.8h35.1a19.54,19.54,0,0,0,18.242-12.5C103.95,182.157,82.658,171.191,78.614,162.449Z" fill="url(#linear-gradient-5)"/>
+      <rect id="c-i_mg-8" data-name="c-i mg" x="81.559" y="115.529" width="21.707" height="41.281" transform="translate(184.825 272.339) rotate(-180)" fill="#46d8bc"/>
+    </g>
+  </g>
+</svg>
