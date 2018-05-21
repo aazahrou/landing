@@ -3,18 +3,18 @@
 import config from 'react-global-configuration';
 
 const DEFAULT_CONF_DEV = {
+  apiUrl: 'https://staging-api.getchange.com',
   mixpanelToken: 'none',
-  googleMapsKey: 'AIzaSyCLV3dMT4Oh6N_U8R1Sqn_84RPdI9p_kos',
 };
 
 const DEFAULT_CONF_STAGING = {
+  apiUrl: 'https://staging-api.getchange.com',
   mixpanelToken: 'none',
-  googleMapsKey: 'AIzaSyCLV3dMT4Oh6N_U8R1Sqn_84RPdI9p_kos',
 };
 
 const DEFAULT_CONF_PRODUCTION = {
+  apiUrl: 'https://api.getchange.com',
   mixpanelToken: 'eda8215eea75dc2a02b6fce287d0e144',
-  googleMapsKey: 'AIzaSyC5hizdMNKn1sLOUdmrCSeSgSsJfl7acO4',
 };
 
 export default function initialize(): void {

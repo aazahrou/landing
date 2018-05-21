@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Component } from 'react';
+import React from 'react';
 import { Switch, Route } from 'react-router';
 import { BrowserRouter } from 'react-router-dom'
 import { GoogleTagManager } from './tracker';
@@ -23,25 +23,21 @@ const DefaultTheme = {
   },
 };
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <GoogleTagManager gtmId="GTM-55R5ZNL" />
-        <ThemeProvider theme={DefaultTheme}>
-          <BrowserRouter>
-            <Switch>
-              <Route exact path="/" component={Landing} />
-              <Route path="/about" component={Landing} />
-              <Route path="/careers" component={Landing} />
-              <Route path="/legal" component={Landing} />
-              <Route path="/notify-me-success" component={Landing} />
-            </Switch>
-          </BrowserRouter>
-        </ThemeProvider>
-      </div>
-    );
-  }
-}
+export const App = () => (
+  <div>
+    <GoogleTagManager gtmId="GTM-55R5ZNL" />
+    <ThemeProvider theme={DefaultTheme}>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route path="/about" component={Landing} />
+          <Route path="/careers" component={Landing} />
+          <Route path="/legal" component={Landing} />
+          <Route path="/notify-me-success" component={Landing} />
+        </Switch>
+      </BrowserRouter>
+    </ThemeProvider>
+  </div>
+);
 
 export default App;
