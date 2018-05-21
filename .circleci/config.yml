@@ -1,0 +1,99 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+defaults: &defaults
+  working_directory: ~/landing
+  docker:
+    - image: circleci/node:10
+
+version: 2
+jobs:
+  build-job:
+    <<: *defaults
+    steps:
+      - checkout
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-node9-dependencies-{{ arch }}-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-node9-dependencies-
+      - run: yarn install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-node9-dependencies-{{ arch }}-{{ checksum "package.json" }}
+
+      - run:
+          name: "Test Suite"
+          command: yarn test:ci
+      - store_test_results:
+          path: reports/junit
+      - store_artifacts:
+          path: reports/junit
+
+  deploy-staging:
+    <<: *defaults
+    steps:
+      - checkout
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-node9-dependencies-{{ arch }}-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-node9-dependencies-
+      - run: yarn install
+      - run: yarn build
+      - run: 'sudo apt install python-pip python-dev'
+      - run: 'sudo pip install awscli'
+      - deploy:
+          name: Deploy to S3 staging
+          command: |
+            aws s3 sync build/ s3://staging-change-landing --delete
+            aws configure set preview.cloudfront true
+            aws cloudfront create-invalidation --distribution-id E1IGDSJ2O1604X --paths "/*"
+
+  deploy-production:
+    <<: *defaults
+    steps:
+      - checkout
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-node9-dependencies-{{ arch }}-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-node9-dependencies-
+      - run: yarn install
+      - run:
+          name: Build production
+          command: yarn build
+          environment:
+            REACT_APP_ENV: production
+      - run: 'sudo apt install python-pip python-dev'
+      - run: 'sudo pip install awscli'
+      - deploy:
+          name: Deploy to S3 production
+          command: |
+            aws s3 sync build/ s3://change-landing --delete
+            aws configure set preview.cloudfront true
+            aws cloudfront create-invalidation --distribution-id E2CH23YWJE7QP1 --paths "/*"
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build-job
+      - deploy-staging:
+          requires:
+            - build-job
+          filters:
+            branches:
+              only: master
+      - deploy-production:
+          requires:
+            - build-job
+          filters:
+            branches:
+              only: master
