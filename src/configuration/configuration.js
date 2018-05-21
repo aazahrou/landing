@@ -4,16 +4,19 @@ import config from 'react-global-configuration';
 
 const DEFAULT_CONF_DEV = {
   apiUrl: 'https://staging-api.getchange.com',
+  appUrl: 'https://staging-app.getchange.com',
   mixpanelToken: 'none',
 };
 
 const DEFAULT_CONF_STAGING = {
   apiUrl: 'https://staging-api.getchange.com',
+  appUrl: 'https://staging-app.getchange.com',
   mixpanelToken: 'none',
 };
 
 const DEFAULT_CONF_PRODUCTION = {
   apiUrl: 'https://api.getchange.com',
+  appUrl: 'https://app.getchange.com',
   mixpanelToken: 'eda8215eea75dc2a02b6fce287d0e144',
 };
 

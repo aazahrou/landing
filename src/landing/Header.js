@@ -4,10 +4,11 @@ import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
+import config from 'react-global-configuration';
 
 import Logo from './Logo';
 
-import { NavButton } from './ui';
+import { AnchorButton } from './ui';
 
 import variables from '../ui/variables';
 
@@ -22,7 +23,7 @@ const Container = styled.div`
   box-shadow: ${props =>
     props.withBackground ? variables.boxShadowNeutralSmall : 'none'};
   transition: all 0.3s;
-  ${breakpoint('tablet')`
+  ${breakpoint('tablet') `
     padding: 0 48px;
   `};
 `;
@@ -31,14 +32,14 @@ const InnerContainer = styled.div`
   height: 60px;
   display: flex;
   align-items: center;
-  ${breakpoint('tablet')`
+  ${breakpoint('tablet') `
     height: 72px;
   `};
 `;
 
 const LogoContainer = styled.div`
   flex: 25%;
-  ${breakpoint('tablet')`
+  ${breakpoint('tablet') `
     flex: 10%;
     margin-right: 24px;
   `};
@@ -46,7 +47,7 @@ const LogoContainer = styled.div`
 
 const LeftNavContainer = styled.div`
   display: none;
-  ${breakpoint('tablet')`
+  ${breakpoint('tablet') `
     flex: 40%;
     display: flex;
     justify-content: flex-start;
@@ -55,7 +56,7 @@ const LeftNavContainer = styled.div`
 
 const RightNavContainer = styled.div`
   display: none;
-  ${breakpoint('tablet')`
+  ${breakpoint('tablet') `
     flex: 80%;
     display: flex;
     justify-content: flex-end;
@@ -66,7 +67,7 @@ const MobileNav = styled.div`
   flex: 75%;
   display: flex;
   justify-content: flex-end;
-  ${breakpoint('tablet')`
+  ${breakpoint('tablet') `
     display: none;
   `};
 `;
@@ -78,16 +79,16 @@ const NavItem = styled.div`
   margin-left: ${props => (props.marginLeft ? '12px' : '0')};
 `;
 
-const NavLink = styled(Link)`
+const NavLink = styled(Link) `
   color: ${props =>
     props.color === 'blue' ? variables.colorBlue : variables.colorNeutral};
   font-size: ${variables.fontSizeSmall};
   line-height: 1;
-  ${breakpoint('tablet')`
+  ${breakpoint('tablet') `
     padding: 12px 18px;
     &:hover {
       color: ${props =>
-        props.blue ? variables.colorBlueDark : variables.colorNeutralDark};
+      props.blue ? variables.colorBlueDark : variables.colorNeutralDark};
       text-decoration: none;
     }
   `};
@@ -163,9 +164,9 @@ class Header extends React.Component<Props, State> {
                 </NavLink>
               </NavItem>
               <NavItem marginLeft>
-                <NavButton to="/app" color="blue" size="small">
+                <AnchorButton href={config.get('appUrl')} color="blue" size="small">
                   Sign up
-                </NavButton>
+                </AnchorButton>
               </NavItem>
             </Nav>
           </RightNavContainer>
@@ -173,9 +174,9 @@ class Header extends React.Component<Props, State> {
           <MobileNav>
             <Nav>
               <NavItem>
-                <NavButton to="/app" color="blue" size="small">
+                <AnchorButton href={config.get('appUrl')} color="blue" size="small">
                   Sign up
-                </NavButton>
+                </AnchorButton>
               </NavItem>
             </Nav>
           </MobileNav>
