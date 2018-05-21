@@ -2,6 +2,15 @@
   "name": "landing",
   "version": "0.1.0",
   "private": true,
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChangeFinance/landing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChangeFinance/landing/issues",
+    "email": "support@getchange.com"
+  },
   "dependencies": {
     "change-bootstrap": "https://github.com/ChangeFinance/change-bootstrap",
     "mixpanel-browser": "^2.22.0",
@@ -29,6 +38,7 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "npm run build-css && flow && react-scripts test --env=jsdom",
+    "test:ci": "npm run build-css && flow && react-scripts test --env=jsdom --testResultsProcessor ./node_modules/jest-junit",
     "flow": "flow",
     "eject": "react-scripts eject"
   },
@@ -38,6 +48,10 @@
     "flow-bin": "^0.72.0",
     "flow-typed": "^2.4.0",
     "jest": "^22.4.4",
-    "jest-enzyme": "^6.0.0"
+    "jest-enzyme": "^6.0.0",
+    "jest-junit": "^4.0.0"
+  },
+  "jest-junit": {
+    "output": "reports/junit/js-test-results.xml"
   }
 }
