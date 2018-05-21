@@ -53,7 +53,7 @@ jobs:
           command: |
             aws s3 sync build/ s3://staging-change-landing --delete
             aws configure set preview.cloudfront true
-            aws cloudfront create-invalidation --distribution-id E1IGDSJ2O1604X --paths "/*"
+            aws cloudfront create-invalidation --distribution-id E3NVAA8VZ490ZO --paths "/*"
 
   deploy-production:
     <<: *defaults
@@ -78,7 +78,7 @@ jobs:
           command: |
             aws s3 sync build/ s3://change-landing --delete
             aws configure set preview.cloudfront true
-            aws cloudfront create-invalidation --distribution-id E2CH23YWJE7QP1 --paths "/*"
+            aws cloudfront create-invalidation --distribution-id E2H6LIE2Y240LB --paths "/*"
 
 workflows:
   version: 2
