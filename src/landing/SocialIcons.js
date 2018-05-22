@@ -77,7 +77,7 @@ export const SocialIcons = () => (
           </Link>
         </Icon>
         <Icon>
-          <Link to="https://medium.com/@changebank" target="_blank">
+          <Link to="https://medium.com/changefinance" target="_blank">
             <IconImage src={svgMedium} alt="Medium" />
           </Link>
         </Icon>

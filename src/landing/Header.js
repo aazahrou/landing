@@ -139,7 +139,7 @@ class Header extends React.Component<Props, State> {
                 <NavLink to="/#card">Card</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/#marketplace">Marketplace</NavLink>
+                <NavLink to="/#pricing">Pricing</NavLink>
               </NavItem>
             </Nav>
           </LeftNavContainer>

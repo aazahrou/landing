@@ -5,7 +5,6 @@ import { Transition } from 'react-transition-group';
 import Waypoint from 'react-waypoint';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
-import Disclaimer from './Disclaimer';
 import GradientText from './GradientText';
 
 import photo from './img/photo-landing-card.jpg';
@@ -24,23 +23,20 @@ const Container = styled.div`
 `;
 
 const InnerContainer = styled.div`
+  text-align: center;
   ${breakpoint('tablet')`
     width: 960px;
     margin: 0 auto;
-  `};
-  ${breakpoint('desktop')`
-
   `};
 `;
 
 const TextContainer = styled.div`
   padding: 0 24px;
   ${breakpoint('tablet')`
-    text-align: left;
+    text-align: center;
     padding: 0;
-    padding-left: 480px;
-  `};
-  ${breakpoint('desktop')`
+    max-width: 600px;
+    margin: 0 auto;
   `};
 `;
 
@@ -48,7 +44,7 @@ const Heading = styled.div`
   font-family: ${variables.fontPrimary};
   font-weight: ${variables.fontWeightBold};
   font-size: ${variables.fontSizeLargest};
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 24px;
   ${breakpoint('tablet')`
     font-size: ${variables.fontSizeHuge};
@@ -241,16 +237,10 @@ class Card extends React.Component<Props, State> {
                       </FadeTransition>
                       <FadeTransition state={state} delay={300}>
                         <Body>
-                          Use Change Travel Card to convert your currencies<Disclaimer
-                          >
-                            The prepaid card is denominated in fiat currency
-                            (USD, EUR, GBP). It can only be loaded with fiat
-                            currency and only facilitates spending in fiat
-                            currency. You can load the card with fiat currency
-                            that you receive in exchange for your virtual
-                            currency.
-                          </Disclaimer>{' '}
-                          seamlessly, with government level security.
+                          With Change Card you can make your payments and ATM
+                          withdrawals in any supported currency. The card is
+                          universally accepted, even in stores that don’t accept
+                          virtual currencies.
                         </Body>
                       </FadeTransition>
                       <FadeTransition state={state} delay={450}>
