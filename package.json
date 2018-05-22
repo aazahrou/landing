@@ -29,7 +29,8 @@
     "react-transition-group": "^2.3.1",
     "react-waypoint": "^8.0.1",
     "styled-components": "^3.2.6",
-    "styled-components-breakpoint": "^2.0.2"
+    "styled-components-breakpoint": "^2.0.2",
+    "tween": "^0.9.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
@@ -47,7 +48,6 @@
     "expect": "^22.4.3",
     "flow-bin": "^0.72.0",
     "flow-typed": "^2.4.0",
-    "jest": "^22.4.4",
     "jest-enzyme": "^6.0.0",
     "jest-junit": "^4.0.0"
   },

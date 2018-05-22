@@ -67,7 +67,7 @@ const ButtonBase = ({ color, size, fluid, ...props }: Props) => (
 const Button = styled(ButtonBase)`
   color: ${props => getColor(props.color)};
   font-family: ${variables.fontSecondary};
-  font-size: ${variables.fontSizeNormal};
+  font-size: ${variables.fontSizeSmall};
   font-weight: ${variables.fontWeightBold};
   text-transform: uppercase;
   display: inline-block;

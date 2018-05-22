@@ -5,8 +5,6 @@ import breakpoint from 'styled-components-breakpoint';
 
 import variables from '../ui/variables';
 
-import background from './img/background-about.jpg';
-
 const Container = styled.div`
   padding: 0 24px;
   margin: 24px 0 48px;
@@ -45,26 +43,6 @@ const IntroBody = styled.div`
   }
 `;
 
-const Background = styled.div`
-  display: none;
-  pointer-events: none;
-  ${breakpoint('tablet')`
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: ${variables.zIndexHeroBackground};
-    width: 653px;
-    height: 618px;
-  `};
-`;
-
-const BackgroundImage = styled.img`
-  ${breakpoint('tablet')`
-    width: 100%;
-  `};
-`;
-
 export const AboutIntro = () => (
   <Container>
     <IntroHeading>
@@ -82,9 +60,6 @@ export const AboutIntro = () => (
         loop" and take control.
       </p>
     </IntroBody>
-    <Background>
-      <BackgroundImage src={background} alt="" />
-    </Background>
   </Container>
 );
 

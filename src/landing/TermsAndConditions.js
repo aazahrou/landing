@@ -4,11 +4,11 @@ import IntercomBubble from './IntercomBubble';
 import { default as Page, Body } from './Page';
 import { TermsAndConditionsText } from '../common';
 
-import { GradientHeading } from './ui';
+import { Heading } from './ui';
 
 export const Legal = () => (
   <Page>
-    <GradientHeading>Terms and conditions of Change</GradientHeading>
+    <Heading>Terms and conditions of Change</Heading>
     <Body>
       <TermsAndConditionsText />
       <IntercomBubble />
