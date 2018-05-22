@@ -6,7 +6,6 @@ import Waypoint from 'react-waypoint';
 import styled from 'styled-components';
 import About from './About';
 
-import Arrow from './Arrow';
 import Careers from './Careers';
 import Footer from './Footer';
 import Header from './Header';
@@ -82,10 +81,6 @@ class Landing extends React.Component<Props, State> {
           </Switch>
 
           <Footer />
-
-          {this.props.location.pathname === '/' && (
-            <Arrow to="/#card" isHidden={this.state.hasScrolled} />
-          )}
         </Container>
       </ScrollToTop>
     );

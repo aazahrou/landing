@@ -3,13 +3,14 @@ import React from 'react';
 import styled from 'styled-components';
 import IntercomBubble from './IntercomBubble';
 import Card from './Card';
-import GlobalMovement from './GlobalMovement';
+import CreateYourAccount from './CreateYourAccount';
 import Hero from './Hero';
-import Marketplace from './Marketplace';
 import Press from './Press';
 import ScrollToTarget from './ScrollToTarget';
 import variables from '../ui/variables';
 import Wallet from './Wallet';
+import Pricing from './Pricing';
+import PriceComparisonTable from './PriceComparisonTable';
 
 const Container = styled.div`
   overflow: hidden;
@@ -23,8 +24,9 @@ export const Home = () => (
       <Hero />
       <Wallet />
       <Card />
-      <Marketplace />
-      <GlobalMovement />
+      <Pricing />
+      <PriceComparisonTable />
+      <CreateYourAccount />
       <Press />
       <IntercomBubble />
     </Container>

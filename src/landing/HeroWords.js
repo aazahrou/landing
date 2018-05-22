@@ -12,7 +12,7 @@ const Container = styled.div`
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 60px;
+  height: 90px;
   z-index: ${variables.zIndexHeroWords};
   ${breakpoint('tablet')`
     height: 130px;
@@ -21,7 +21,7 @@ const Container = styled.div`
 
 const Word = styled.div`
   font-family: ${variables.fontPrimary};
-  font-size: ${variables.fontSizeHuge};
+  font-size: 80px;
   font-weight: ${variables.fontWeightBold};
   letter-spacing: -1px;
   line-height: 1;
@@ -29,7 +29,7 @@ const Word = styled.div`
   left: 50%;
   top: 0;
   width: 360px;
-  height: 60px;
+  height: 90px;
   pointer-events: none;
   transform: translateX(-50%);
   transition: all 0.6s;
@@ -53,12 +53,12 @@ const Word = styled.div`
   ${props =>
     props.state === 'exiting' &&
     `
-      transform: translateX(-50%) translateY(100%);
+      transform: translateX(-50%) translateY(150%);
     `};
   ${props =>
     props.state === 'exited' &&
     `
-      transform: translateX(-50%) translateY(100%);
+      transform: translateX(-50%) translateY(150%);
   `};
 `;
 
