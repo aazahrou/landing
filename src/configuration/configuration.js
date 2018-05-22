@@ -22,11 +22,10 @@ const DEFAULT_CONF_PRODUCTION = {
 
 export default function initialize(): void {
   const env = process.env.REACT_APP_ENV || process.env.NODE_ENV;
-  if (env === 'development') {
-    config.set(DEFAULT_CONF_DEV, { freeze: false });
-  } else if (env === 'staging') {
+  if (env === 'staging') {
     config.set(DEFAULT_CONF_STAGING, { freeze: false });
   } else if (env === 'production') {
     config.set(DEFAULT_CONF_PRODUCTION, { freeze: false });
   }
+  config.set(DEFAULT_CONF_DEV, { freeze: false });
 }

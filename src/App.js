@@ -7,6 +7,7 @@ import { GoogleTagManager } from './tracker';
 import { Landing } from './landing';
 import { ThemeProvider } from 'styled-components';
 import 'change-bootstrap/dist/css/bootstrap-material-design.css';
+import './initialize';
 
 const DefaultTheme = {
   background: '#e5f9f3',
