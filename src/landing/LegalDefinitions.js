@@ -4,7 +4,7 @@ import React from 'react';
 import { Page, Body } from './Page';
 import { LegalDefinitionsText } from '../common';
 
-import { Heading } from '../ui';
+import { Heading } from './ui';
 
 export const LegalDefinitions = () => (
   <Page>
