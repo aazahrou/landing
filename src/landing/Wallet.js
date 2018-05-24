@@ -7,6 +7,7 @@ import breakpoint from 'styled-components-breakpoint';
 import Buttons from './TwoAppButtons';
 import ScrollToTarget from './ScrollToTarget';
 import variables from '../ui/variables';
+import Disclaimer from './Disclaimer';
 
 const Container = styled.div`
   margin-bottom: 96px;
@@ -97,7 +98,9 @@ class Wallet extends React.Component<Props, State> {
                   </FadeTransition>
                   <FadeTransition state={state} delay={300}>
                     <Body>
-                      Safe and easy way to buy, exchange, and keep track of
+                      Safe and easy way to buy, exchange<Disclaimer>
+                        Cryptocurrency conversion coming soon.
+                      </Disclaimer>{' '}, and keep track of
                       traditional and virtual currencies. Change charges zero
                       commission fees.
                     </Body>
