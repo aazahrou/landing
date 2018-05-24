@@ -34,10 +34,6 @@ const Image = styled.img``;
 
 type Props = {};
 
-type State = {
-  isVisible: boolean,
-};
-
 const Td = styled.td`
   vertical-align: middle !important;
 `;
@@ -46,18 +42,7 @@ const Th = styled.th`
   vertical-align: middle !important;
 `;
 
-class PriceComparisonTable extends React.Component<Props, State> {
-  state = {
-    isVisible: true,
-  };
-
-  handleWaypointEnter = () => {
-    this.setState({ isVisible: true });
-  };
-
-  handleWaypointLeave = () => {
-    this.setState({ isVisible: false });
-  };
+class PriceComparisonTable extends React.Component<Props> {
 
   render() {
     return (
