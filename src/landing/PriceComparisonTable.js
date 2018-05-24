@@ -85,7 +85,7 @@ class PriceComparisonTable extends React.Component<Props> {
                   <Td>
                     <span className="bold">Free<Disclaimer>
                         Cryptocurrency conversion coming soon.
-                      </Disclaimer>{' '}</span>
+                      </Disclaimer></span>
                   </Td>
                   <Td>1.49%</Td>
                   <Td>up to 5%</Td>
