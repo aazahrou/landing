@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import { Transition } from 'react-transition-group';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 import change from './img/competitors/change.png';
@@ -47,7 +46,6 @@ class PriceComparisonTable extends React.Component<Props> {
   render() {
     return (
       <Container>
-        <Transition in={this.state.isVisible} timeout={2000}>
           <InnerContainer>
             <table className="table">
               <thead>
@@ -100,7 +98,6 @@ class PriceComparisonTable extends React.Component<Props> {
               </tbody>
             </table>
           </InnerContainer>
-        </Transition>
       </Container>
     );
   }
