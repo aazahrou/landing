@@ -27,6 +27,9 @@ const InnerContainer = styled.div`
 
 const ItemsContainer = styled.div`
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   &:not(:last-child) {
     margin-bottom: 24px;
   }
@@ -99,29 +102,10 @@ const LegalLink = styled.a`
   `};
 `;
 
-const LegalText = styled.p`
-  color: ${variables.colorNeutralLight};
-  font-size: ${variables.fontSizeSmall};
-  text-align: center;
-  margin-top: 12px;
-`;
-
 export const Footer = () => (
   <Container>
     <InnerContainer>
       <ItemsContainer>
-        <Item>
-          <ItemLink to="/#home">Home</ItemLink>
-        </Item>
-        <Item>
-          <ItemLink to="/#wallet">Wallet</ItemLink>
-        </Item>
-        <Item>
-          <ItemLink to="/#card">Card</ItemLink>
-        </Item>
-        <Item>
-          <ItemLink to="/#marketplace">Marketplace</ItemLink>
-        </Item>
         <Item>
           <ItemAnchor
             href="/Whitepaper.pdf"
@@ -170,13 +154,6 @@ export const Footer = () => (
           Bug Bounty
         </LegalLink>
       </CompanyContainer>
-      <LegalText>
-        Change is currently not authorised to provide and does not provide
-        banking, payment or other financial services.
-        <br />
-        No financial services will be provided until the issue of a required
-        operating licence by a competent financial supervision authority.
-      </LegalText>
     </InnerContainer>
   </Container>
 );

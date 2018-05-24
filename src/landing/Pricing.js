@@ -4,14 +4,13 @@ import { Transition } from 'react-transition-group';
 import Waypoint from 'react-waypoint';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
-import Buttons from './TwoAppButtons';
 import ScrollToTarget from './ScrollToTarget';
 import variables from '../ui/variables';
 
 const Container = styled.div`
-  margin-bottom: 96px;
+  margin-bottom: 48px;
   ${breakpoint('tablet')`
-    margin-bottom: 240px;
+    margin-bottom: 96px;
   `};
 `;
 
@@ -80,7 +79,7 @@ class Wallet extends React.Component<Props, State> {
 
   render() {
     return (
-      <ScrollToTarget hash="#wallet" pos="center">
+      <ScrollToTarget hash="#pricing" pos="center">
         <Waypoint
           onEnter={this.handleWaypointEnter}
           onLeave={this.handleWaypointLeave}
@@ -91,19 +90,15 @@ class Wallet extends React.Component<Props, State> {
             <Transition in={this.state.isVisible} timeout={2000}>
               {state => (
                 <InnerContainer>
-                  <FadeTransition state={state} delay={0} />
                   <FadeTransition state={state} delay={150}>
-                    <Heading>Free cryptocurrency wallet</Heading>
+                    <Heading>Pricing</Heading>
                   </FadeTransition>
                   <FadeTransition state={state} delay={300}>
                     <Body>
-                      Safe and easy way to buy, exchange, and keep track of
-                      traditional and virtual currencies. Change charges zero
-                      commission fees.
+                      Change charges zero commission fees. A subscription plan
+                      will be introduced in the future for active traders. Below
+                      is a fee comparison for European customers.
                     </Body>
-                  </FadeTransition>
-                  <FadeTransition state={state} delay={450}>
-                    <Buttons />
                   </FadeTransition>
                 </InnerContainer>
               )}
