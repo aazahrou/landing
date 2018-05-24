@@ -76,22 +76,7 @@ const Body = styled.div`
 
 type Props = {};
 
-type State = {
-  isModalOpen: boolean,
-};
-
-class CreateYourAccount extends React.Component<Props, State> {
-  state = {
-    isModalOpen: false,
-  };
-
-  closeModal() {
-    this.setState({ isModalOpen: false });
-  }
-
-  handleClick() {
-    this.setState({ isModalOpen: true });
-  }
+class CreateYourAccount extends React.Component<Props> {
 
   render() {
     return (
