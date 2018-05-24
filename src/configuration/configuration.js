@@ -26,6 +26,7 @@ export default function initialize(): void {
     config.set(DEFAULT_CONF_STAGING, { freeze: false });
   } else if (env === 'production') {
     config.set(DEFAULT_CONF_PRODUCTION, { freeze: false });
+  } else {
+    config.set(DEFAULT_CONF_DEV, { freeze: false });
   }
-  config.set(DEFAULT_CONF_DEV, { freeze: false });
 }
