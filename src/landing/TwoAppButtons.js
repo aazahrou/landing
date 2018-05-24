@@ -1,11 +1,11 @@
 // @flow
 import React from 'react';
 import { Button } from './ui';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import svgAndroid from './img/android-logo.svg';
 import pngTransparent from './img/transparent.png';
 import * as tracker from '../tracker/Tracker';
+import config from "react-global-configuration";
 
 const Container = styled.div`
   max-width: 400px;
@@ -37,11 +37,11 @@ const StyledButton = Button.extend`
 const Buttons = () => (
   <Container>
     <InnerContainer>
-      <Link to="/app">
+      <a href={config.get('appUrl')}>
         <StyledButton color="gradient">
           <Image height="18px" width="0" src={pngTransparent} />Web app
         </StyledButton>
-      </Link>
+      </a>
       <SpacingDiv />
       <a
         href="https://play.google.com/store/apps/details?id=com.getchange.wallet.cordova"
