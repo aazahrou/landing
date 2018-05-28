@@ -31,7 +31,11 @@ const InnerContainer = styled.div`
   `};
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+  @media only screen and (max-device-width: 480px){
+    max-width: 50px;
+  }
+`;
 
 type Props = {};
 
@@ -57,13 +61,13 @@ class PriceComparisonTable extends React.Component<Props> {
               <tr>
                 <Th scope="col" />
                 <Th scope="col">
-                  <Image width="75px" src={change} />
+                  <Image width="75px" src={change} className="img-smaller-screen"/>
                 </Th>
                 <Th scope="col">
-                  <Image width="75px" src={coinbase} />
+                  <Image width="75px" src={coinbase} className="img-smaller-screen"/>
                 </Th>
                 <Th scope="col">
-                  <Image width="65px" src={etoro} />
+                  <Image width="65px" src={etoro} className="img-smaller-screen"/>
                 </Th>
               </tr>
               </thead>
