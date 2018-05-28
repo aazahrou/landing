@@ -3,9 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 import { Transition } from 'react-transition-group';
-
 import variables from '../ui/variables';
-
 import GradientText from './GradientText';
 
 const Container = styled.div`

@@ -85,8 +85,9 @@ export const Residency = () => (
           <Body>
             <p>
               As a strong validation to our vision and plans, Change has
-              partnered with the most advanced digital society in the world, the
-              e-Residency initiative by the government of Estonia.
+              started working together with the most advanced digital
+              society in the world, the e-Residency initiative by the
+              government of Estonia.
             </p>
           </Body>
         </Column>

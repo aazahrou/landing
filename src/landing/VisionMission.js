@@ -1,11 +1,10 @@
 // @flow
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 import variables from '../ui/variables';
 import { GradientText } from './GradientText';
-import { Button } from './ui';
+import Buttons from './TwoAppButtons';
 
 const Container = styled.div`
   margin-bottom: 60px;
@@ -59,12 +58,6 @@ const Body = styled.div`
   }
 `;
 
-const CTA = styled.div`
-  margin-top: 24px;
-  ${breakpoint('desktop')`
-    margin-top: 42px;
-  `};
-`;
 
 export const VisionMission = () => (
   <Container>
@@ -75,11 +68,7 @@ export const VisionMission = () => (
         </Heading>
         <Body>
           <p>To build an open financial world.</p>
-          <CTA>
-            <Link to="/app">
-              <Button color="gradient">Go to Wallet</Button>
-            </Link>
-          </CTA>
+          <Buttons />
         </Body>
       </Column>
       <Column>

@@ -1,15 +1,17 @@
 // @flow
 import React from 'react';
 import { Button } from './ui';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import svgAndroid from './img/android-logo.svg';
-import pngTransparent from './img/transparent.png';
+import svgApple from './img/ios-logo.svg';
 import * as tracker from '../tracker/Tracker';
 
 const Container = styled.div`
   max-width: 400px;
   margin: auto;
+  .lowercase{
+  text-transform: lowercase;
+  }
 `;
 
 const InnerContainer = styled.div`
@@ -29,26 +31,33 @@ const trackAndroidAppLinkClick = () => {
   tracker.track('ANDROID_APP_LINK');
 };
 
+const trackAppleAppLinkClick = () => {
+  tracker.track('APPSTORE_APP_LINK');
+};
+
 const StyledButton = Button.extend`
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 `;
 
 const Buttons = () => (
   <Container>
     <InnerContainer>
-      <Link to="/app">
+      <a
+        href="https://itunes.apple.com/ee/app/change-wallet/id1375897908?mt=8&app=itunes&ign-mpt=uo%3D4"
+        onClick={trackAppleAppLinkClick}
+      >
         <StyledButton color="gradient">
-          <Image height="18px" width="0" src={pngTransparent} />Web app
+          <Image height="18px" src={svgApple} /><span className="lowercase">i</span>OS App
         </StyledButton>
-      </Link>
+      </a>
       <SpacingDiv />
       <a
         href="https://play.google.com/store/apps/details?id=com.getchange.wallet.cordova"
         onClick={trackAndroidAppLinkClick}
       >
         <StyledButton color="gradient">
-          <Image height="18px" src={svgAndroid} />Android
+          <Image height="18px" src={svgAndroid} />Android App
         </StyledButton>
       </a>
     </InnerContainer>
