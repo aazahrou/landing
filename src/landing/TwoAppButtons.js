@@ -9,9 +9,6 @@ import * as tracker from '../tracker/Tracker';
 const Container = styled.div`
   max-width: 400px;
   margin: auto;
-  .lowercase{
-  text-transform: lowercase;
-  }
 `;
 
 const InnerContainer = styled.div`
@@ -38,6 +35,10 @@ const trackAppleAppLinkClick = () => {
 const StyledButton = Button.extend`
   padding-left: 20px;
   padding-right: 20px;
+  @media only screen and (max-device-width: 480px){
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
 
 const Buttons = () => (
@@ -48,7 +49,7 @@ const Buttons = () => (
         onClick={trackAppleAppLinkClick}
       >
         <StyledButton color="gradient">
-          <Image height="18px" src={svgApple} /><span className="lowercase">i</span>OS App
+          <Image height="18px" src={svgApple} />AppStore
         </StyledButton>
       </a>
       <SpacingDiv />
@@ -57,7 +58,7 @@ const Buttons = () => (
         onClick={trackAndroidAppLinkClick}
       >
         <StyledButton color="gradient">
-          <Image height="18px" src={svgAndroid} />Android App
+          <Image height="18px" src={svgAndroid} />PlayStore
         </StyledButton>
       </a>
     </InnerContainer>

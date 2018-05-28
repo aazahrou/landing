@@ -31,7 +31,11 @@ const InnerContainer = styled.div`
   `};
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+  @media only screen and (max-device-width: 480px){
+    max-width: 50px;
+  }
+`;
 
 type Props = {};
 

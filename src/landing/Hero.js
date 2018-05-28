@@ -25,6 +25,9 @@ const Container = styled.div`
     padding: 144px 96px;
     margin: 0;
   `};
+  @media only screen and (max-device-width: 480px){
+    padding-bottom: 750px;
+  }
 `;
 
 const InnerContainer = styled.div`
