@@ -4,7 +4,6 @@ import { Transition } from 'react-transition-group';
 import Waypoint from 'react-waypoint';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
-import ScrollToTarget from './ScrollToTarget';
 import variables from '../ui/variables';
 
 const Container = styled.div`
@@ -79,7 +78,6 @@ class Wallet extends React.Component<Props, State> {
 
   render() {
     return (
-      <ScrollToTarget hash="#pricing" pos="center">
         <Waypoint
           onEnter={this.handleWaypointEnter}
           onLeave={this.handleWaypointLeave}
@@ -105,7 +103,6 @@ class Wallet extends React.Component<Props, State> {
             </Transition>
           </Container>
         </Waypoint>
-      </ScrollToTarget>
     );
   }
 }

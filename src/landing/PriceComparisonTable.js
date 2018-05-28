@@ -6,6 +6,7 @@ import change from './img/competitors/change.png';
 import coinbase from './img/competitors/coinbase.png';
 import etoro from './img/competitors/etoro.png';
 import Disclaimer from './Disclaimer';
+import ScrollToTarget from './ScrollToTarget';
 
 const Container = styled.div`
   margin-bottom: 96px;
@@ -36,72 +37,76 @@ type Props = {};
 
 const Td = styled.td`
   vertical-align: middle !important;
+  border: none !important;
 `;
 
 const Th = styled.th`
   vertical-align: middle !important;
+  border: none !important;  
 `;
 
 class PriceComparisonTable extends React.Component<Props> {
 
   render() {
     return (
-      <Container>
+      <ScrollToTarget hash="#pricing" pos="center">
+        <Container>
           <InnerContainer>
             <table className="table">
               <thead>
-                <tr>
-                  <Th scope="col" />
-                  <Th scope="col">
-                    <Image width="75px" src={change} />
-                  </Th>
-                  <Th scope="col">
-                    <Image width="75px" src={coinbase} />
-                  </Th>
-                  <Th scope="col">
-                    <Image width="65px" src={etoro} />
-                  </Th>
-                </tr>
+              <tr>
+                <Th scope="col" />
+                <Th scope="col">
+                  <Image width="75px" src={change} />
+                </Th>
+                <Th scope="col">
+                  <Image width="75px" src={coinbase} />
+                </Th>
+                <Th scope="col">
+                  <Image width="65px" src={etoro} />
+                </Th>
+              </tr>
               </thead>
               <tbody>
-                <tr>
-                  <Td>Account</Td>
-                  <Td>
-                    <span className="bold">Free</span>
-                  </Td>
-                  <Td>Free</Td>
-                  <Td>Free</Td>
-                </tr>
-                <tr>
-                  <Td>Crypto purchase fee</Td>
-                  <Td>
-                    <span className="bold">Free</span>
-                  </Td>
-                  <Td>1.49%</Td>
-                  <Td>up to 5%</Td>
-                </tr>
-                <tr>
-                  <Td>Trading fee</Td>
-                  <Td>
+              <tr>
+                <Td>Account</Td>
+                <Td>
+                  <span className="bold">Free</span>
+                </Td>
+                <Td>Free</Td>
+                <Td>Free</Td>
+              </tr>
+              <tr>
+                <Td>Crypto purchase fee</Td>
+                <Td>
+                  <span className="bold">Free</span>
+                </Td>
+                <Td>1.49%</Td>
+                <Td>up to 5%</Td>
+              </tr>
+              <tr>
+                <Td>Trading fee</Td>
+                <Td>
                     <span className="bold">Free<Disclaimer>
                         Cryptocurrency conversion coming soon.
                       </Disclaimer></span>
-                  </Td>
-                  <Td>1.49%</Td>
-                  <Td>up to 5%</Td>
-                </tr>
-                <tr>
-                  <Td>Withdrawal fee</Td>
-                  <Td>
-                    <span className="bold">No commission</span>
-                  </Td>
-                  <Td>No commission</Td>
-                  <Td>$25</Td>
-                </tr>
+                </Td>
+                <Td>1.49%</Td>
+                <Td>up to 5%</Td>
+              </tr>
+              <tr>
+                <Td>Withdrawal fee</Td>
+                <Td>
+                  <span className="bold">No commission</span>
+                </Td>
+                <Td>No commission</Td>
+                <Td>$25</Td>
+              </tr>
               </tbody>
             </table>
           </InnerContainer>
-      </Container>
+        </Container>
+      </ScrollToTarget>
     );
   }
 }
