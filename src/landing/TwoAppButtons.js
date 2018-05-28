@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import svgAndroid from './img/android-logo.svg';
 import svgApple from './img/ios-logo.svg';
 import * as tracker from '../tracker/Tracker';
-import config from "react-global-configuration";
 
 const Container = styled.div`
   max-width: 400px;
