@@ -61,13 +61,13 @@ class PriceComparisonTable extends React.Component<Props> {
               <tr>
                 <Th scope="col" />
                 <Th scope="col">
-                  <Image width="75px" src={change}/>
+                  <Image width="75px" src={change} />
                 </Th>
                 <Th scope="col">
-                  <Image width="75px" src={coinbase}/>
+                  <Image width="75px" src={coinbase} />
                 </Th>
                 <Th scope="col">
-                  <Image width="65px" src={etoro}/>
+                  <Image width="65px" src={etoro} />
                 </Th>
               </tr>
               </thead>
