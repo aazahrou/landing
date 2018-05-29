@@ -26,7 +26,7 @@ const DefaultTheme = {
 
 export const App = () => (
   <div>
-    <GoogleTagManager gtmId="GTM-55R5ZNL" />
+    <div><GoogleTagManager gtmId="GTM-55R5ZNL" /></div>
     <ThemeProvider theme={DefaultTheme}>
       <BrowserRouter>
         <Switch>
