@@ -3,7 +3,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router';
 import { BrowserRouter } from 'react-router-dom'
-import { GoogleTagManager } from './tracker';
 import { Landing } from './landing';
 import { ThemeProvider } from 'styled-components';
 import 'change-bootstrap/dist/css/bootstrap-material-design.css';
@@ -26,7 +25,6 @@ const DefaultTheme = {
 
 export const App = () => (
   <div>
-    <div><GoogleTagManager gtmId="GTM-55R5ZNL" /></div>
     <ThemeProvider theme={DefaultTheme}>
       <BrowserRouter>
         <Switch>
