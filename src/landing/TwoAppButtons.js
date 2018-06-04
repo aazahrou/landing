@@ -49,7 +49,7 @@ const Buttons = () => (
         onClick={trackAppleAppLinkClick}
       >
         <StyledButton color="gradient">
-          <Image height="18px" src={svgApple} />AppStore
+          <Image height="18px" src={svgApple} />App Store
         </StyledButton>
       </a>
       <SpacingDiv />
@@ -58,7 +58,7 @@ const Buttons = () => (
         onClick={trackAndroidAppLinkClick}
       >
         <StyledButton color="gradient">
-          <Image height="18px" src={svgAndroid} />PlayStore
+          <Image height="18px" src={svgAndroid} />Play Store
         </StyledButton>
       </a>
     </InnerContainer>
