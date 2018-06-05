@@ -1,6 +1,7 @@
 # Change landing page
 
 [![CircleCI](https://circleci.com/gh/ChangeFinance/landing/tree/master.svg?style=svg)](https://circleci.com/gh/ChangeFinance/landing/tree/master)
+[![codecov](https://codecov.io/gh/ChangeFinance/landing/branch/master/graph/badge.svg)](https://codecov.io/gh/ChangeFinance/landing)
 [![Known Vulnerabilities](https://snyk.io/test/github/ChangeFinance/landing/badge.svg?style=flat-square)](https://snyk.io/test/github/ChangeFinance/landing)
 
 
