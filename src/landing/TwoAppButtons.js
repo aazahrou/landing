@@ -36,8 +36,8 @@ const StyledButton = Button.extend`
   padding-left: 20px;
   padding-right: 20px;
   @media only screen and (max-device-width: 480px){
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 `;
 
@@ -58,7 +58,7 @@ const Buttons = () => (
         onClick={trackAndroidAppLinkClick}
       >
         <StyledButton color="gradient">
-          <Image height="18px" src={svgAndroid} />Play Store
+          <Image height="18px" src={svgAndroid} />Google Play
         </StyledButton>
       </a>
     </InnerContainer>
