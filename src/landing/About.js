@@ -34,6 +34,8 @@ import imageMarek from './img/people/marek.jpg';
 import imageReelika from './img/people/reelika.jpg';
 import imageKaisa from './img/people/kaisa.jpg';
 import imageToomas from './img/people/toomas.jpg';
+import imageAlmas from './img/people/almas.jpg';
+import imageJayr from './img/people/jayr.jpg';
 
 import LogoStrip from './LogoStrip';
 import Team from './Team';
@@ -220,6 +222,18 @@ export const About = () => (
           image: imageToomas,
         },
         {
+          name: 'Almas Akchabayev',
+          title: 'Full Stack Product Engineer',
+          linkedin: 'http://bit.ly/2Lj86zG',
+          image: imageAlmas,
+        },
+        {
+          name: 'Jayr Motta',
+          title: 'Full Stack Product Engineer',
+          linkedin: 'http://bit.ly/2M2KSzg',
+          image: imageJayr,
+        },
+        {
           name: 'Cofi',
           title: 'Office mascot',
           image: imageCofi,
@@ -231,7 +245,7 @@ export const About = () => (
       people={[
         {
           name: 'Roger Crook',
-          title: 'Former CEO of DHL',
+          title: 'Former CEO of DHL Global Forwarding',
           linkedin: 'http://bit.ly/2k4pVdF',
           image: imageRoger,
         },
