@@ -55,5 +55,10 @@
   },
   "jest-junit": {
     "output": "reports/junit/js-test-results.xml"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json"
+    ]
   }
 }

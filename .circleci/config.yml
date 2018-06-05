@@ -28,9 +28,15 @@ jobs:
 
       - run:
           name: "Test Suite"
-          command: yarn test:ci
+          command: yarn test:ci -- --coverage
+
+      - run:
+          name: Upload coverage report
+          command: bash <(curl -s https://codecov.io/bash)
+
       - store_test_results:
           path: reports/junit
+
       - store_artifacts:
           path: reports/junit
 
