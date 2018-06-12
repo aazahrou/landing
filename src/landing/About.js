@@ -5,7 +5,6 @@ import breakpoint from 'styled-components-breakpoint';
 import IntercomBubble from './IntercomBubble';
 import AboutFacts from './AboutFacts';
 import AboutIntro from './AboutIntro';
-import Residency from './eResidency';
 import logoBlockchainAssets from './img/partners/blockchain-assets.png';
 
 import logoeResidency from './img/partners/e-residency.png';
@@ -71,7 +70,6 @@ export const About = () => (
     <AboutIntro />
     <VisionMission />
     <AboutFacts />
-    <Residency />
     <LogoStrip
       title="Partners"
       items={[
@@ -251,7 +249,7 @@ export const About = () => (
         },
         {
           name: 'Lesly Goh',
-          title: 'Financial services lead at Microsoft',
+          title: 'CTO at World Bank',
           linkedin: 'http://bit.ly/2ic9yLm',
           image: imageLesly,
         },
