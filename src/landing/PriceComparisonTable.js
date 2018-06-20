@@ -5,7 +5,6 @@ import breakpoint from 'styled-components-breakpoint';
 import change from './img/competitors/change.png';
 import coinbase from './img/competitors/coinbase.png';
 import etoro from './img/competitors/etoro.png';
-import Disclaimer from './Disclaimer';
 import ScrollToTarget from './ScrollToTarget';
 
 const Container = styled.div`
@@ -91,9 +90,7 @@ class PriceComparisonTable extends React.Component<Props> {
               <tr>
                 <Td>Trading fee</Td>
                 <Td>
-                    <span className="bold">Free<Disclaimer>
-                        Cryptocurrency conversion coming soon.
-                      </Disclaimer></span>
+                    <span className="bold">Free</span>
                 </Td>
                 <Td>1.49%</Td>
                 <Td>up to 5%</Td>
