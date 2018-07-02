@@ -4,7 +4,10 @@ import { Button } from './ui';
 import styled from 'styled-components';
 import svgAndroid from './img/android-logo.svg';
 import svgApple from './img/ios-logo.svg';
-import * as tracker from '../tracker/Tracker';
+// import * as tracker from '../tracker/Tracker';
+
+const APP_STORE_LINK = "https://itunes.apple.com/ee/app/change-wallet/id1375897908?mt=8&app=itunes&ign-mpt=uo%3D4";
+const PLAY_STORE_LINK = "https://play.google.com/store/apps/details?id=com.getchange.wallet.cordova"
 
 const APP_STORE_LINK = "https://itunes.apple.com/ee/app/change-wallet/id1375897908?mt=8&app=itunes&ign-mpt=uo%3D4";
 const PLAY_STORE_LINK = "https://play.google.com/store/apps/details?id=com.getchange.wallet.cordova"
@@ -27,13 +30,13 @@ const SpacingDiv = styled.div`
   min-width: 10px;
 `;
 
-const trackAndroidAppLinkClick = () => {
-  tracker.track('ANDROID_APP_LINK');
-};
-
-const trackAppleAppLinkClick = () => {
-  tracker.track('APPSTORE_APP_LINK');
-};
+// const trackAndroidAppLinkClick = () => {
+//   tracker.track('ANDROID_APP_LINK');
+// };
+//
+// const trackAppleAppLinkClick = () => {
+//   tracker.track('APPSTORE_APP_LINK');
+// };
 
 const StyledButton = Button.extend`
   display: flex;
