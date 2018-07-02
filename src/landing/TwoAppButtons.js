@@ -6,6 +6,9 @@ import svgAndroid from './img/android-logo.svg';
 import svgApple from './img/ios-logo.svg';
 import * as tracker from '../tracker/Tracker';
 
+const APP_STORE_LINK = "https://itunes.apple.com/ee/app/change-wallet/id1375897908?mt=8&app=itunes&ign-mpt=uo%3D4";
+const PLAY_STORE_LINK = "https://play.google.com/store/apps/details?id=com.getchange.wallet.cordova";
+
 const Container = styled.div`
   max-width: 400px;
   margin: auto;
@@ -44,23 +47,25 @@ const StyledButton = Button.extend`
 const Buttons = () => (
   <Container>
     <InnerContainer>
-      <a
-        href="https://itunes.apple.com/ee/app/change-wallet/id1375897908?mt=8&app=itunes&ign-mpt=uo%3D4"
-        onClick={trackAppleAppLinkClick}
+      <StyledButton
+        color="gradient"
+        onClick={ () => {
+          trackAppleAppLinkClick();
+          window.location.href = APP_STORE_LINK;
+        }}
       >
-        <StyledButton color="gradient">
-          <Image height="18px" src={svgApple} />App Store
-        </StyledButton>
-      </a>
+        <Image height="18px" src={svgApple} />App Store
+      </StyledButton>
       <SpacingDiv />
-      <a
-        href="https://play.google.com/store/apps/details?id=com.getchange.wallet.cordova"
-        onClick={trackAndroidAppLinkClick}
+      <StyledButton
+        color="gradient"
+        onClick={ () => {
+          trackAndroidAppLinkClick();
+          window.location.href = PLAY_STORE_LINK;
+        }}
       >
-        <StyledButton color="gradient">
-          <Image height="18px" src={svgAndroid} />Google Play
-        </StyledButton>
-      </a>
+        <Image height="18px" src={svgAndroid} />Google Play
+      </StyledButton>
     </InnerContainer>
   </Container>
 );
