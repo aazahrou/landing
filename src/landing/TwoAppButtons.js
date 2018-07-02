@@ -4,7 +4,13 @@ import { Button } from './ui';
 import styled from 'styled-components';
 import svgAndroid from './img/android-logo.svg';
 import svgApple from './img/ios-logo.svg';
-import * as tracker from '../tracker/Tracker';
+// import * as tracker from '../tracker/Tracker';
+
+const APP_STORE_LINK = "https://itunes.apple.com/ee/app/change-wallet/id1375897908?mt=8&app=itunes&ign-mpt=uo%3D4";
+const PLAY_STORE_LINK = "https://play.google.com/store/apps/details?id=com.getchange.wallet.cordova"
+
+const APP_STORE_LINK = "https://itunes.apple.com/ee/app/change-wallet/id1375897908?mt=8&app=itunes&ign-mpt=uo%3D4";
+const PLAY_STORE_LINK = "https://play.google.com/store/apps/details?id=com.getchange.wallet.cordova"
 
 const Container = styled.div`
   max-width: 400px;
@@ -24,15 +30,16 @@ const SpacingDiv = styled.div`
   min-width: 10px;
 `;
 
-const trackAndroidAppLinkClick = () => {
-  tracker.track('ANDROID_APP_LINK');
-};
-
-const trackAppleAppLinkClick = () => {
-  tracker.track('APPSTORE_APP_LINK');
-};
+// const trackAndroidAppLinkClick = () => {
+//   tracker.track('ANDROID_APP_LINK');
+// };
+//
+// const trackAppleAppLinkClick = () => {
+//   tracker.track('APPSTORE_APP_LINK');
+// };
 
 const StyledButton = Button.extend`
+  display: flex;
   padding-left: 20px;
   padding-right: 20px;
   @media only screen and (max-device-width: 480px){
@@ -44,23 +51,19 @@ const StyledButton = Button.extend`
 const Buttons = () => (
   <Container>
     <InnerContainer>
-      <a
-        href="https://itunes.apple.com/ee/app/change-wallet/id1375897908?mt=8&app=itunes&ign-mpt=uo%3D4"
-        onClick={trackAppleAppLinkClick}
+      <StyledButton
+        color="gradient"
+        onClick={ () => {window.location.href = APP_STORE_LINK}}
       >
-        <StyledButton color="gradient">
-          <Image height="18px" src={svgApple} />App Store
-        </StyledButton>
-      </a>
+        <Image height="18px" src={svgApple} />App Store
+      </StyledButton>
       <SpacingDiv />
-      <a
-        href="https://play.google.com/store/apps/details?id=com.getchange.wallet.cordova"
-        onClick={trackAndroidAppLinkClick}
+      <StyledButton
+        color="gradient"
+        onClick={ () => {window.location.href = PLAY_STORE_LINK}}
       >
-        <StyledButton color="gradient">
-          <Image height="18px" src={svgAndroid} />Google Play
-        </StyledButton>
-      </a>
+        <Image height="18px" src={svgAndroid} />Google Play
+      </StyledButton>
     </InnerContainer>
   </Container>
 );
