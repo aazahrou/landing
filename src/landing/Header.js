@@ -94,7 +94,7 @@ const NavLink = styled(Link) `
   `};
 `;
 
-const NavAnchor = NavLink.withComponent('a');
+// const NavAnchor = NavLink.withComponent('a');
 
 type Props = {
   location: Object,

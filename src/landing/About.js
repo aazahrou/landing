@@ -38,7 +38,7 @@ import imageJayr from './img/people/jayr.jpg';
 import LogoStrip from './LogoStrip';
 import Team from './Team';
 import Timeline from './Timeline';
-import Token from './Token';
+// import Token from './Token';
 
 import { NavButton } from './ui';
 
@@ -64,16 +64,11 @@ const CareersCTA = styled.div`
   `};
 `;
 
-const Space = styled.div`
-  padding-bottom: 100px;
-`;
-
 export const About = () => (
   <Container>
     <AboutIntro />
     <VisionMission />
     <AboutFacts />
-    <Space />
     <LogoStrip
       title="Partners"
       items={[
