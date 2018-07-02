@@ -39,7 +39,6 @@ import imageJayr from './img/people/jayr.jpg';
 import LogoStrip from './LogoStrip';
 import Team from './Team';
 import Timeline from './Timeline';
-import Token from './Token';
 
 import { NavButton } from './ui';
 
@@ -273,7 +272,6 @@ export const About = () => (
         Open positions
       </NavButton>
     </CareersCTA>
-    <Token />
     <IntercomBubble />
   </Container>
 );

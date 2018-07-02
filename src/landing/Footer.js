@@ -59,8 +59,6 @@ const ItemLink = styled(Link)`
   `};
 `;
 
-const ItemAnchor = ItemLink.withComponent('a');
-
 const SocialContainer = styled.div`
   text-align: center;
   margin: 24px 0;
@@ -107,13 +105,6 @@ export const Footer = () => (
     <InnerContainer>
       <ItemsContainer>
         <Item>
-          <ItemAnchor
-            href="/Whitepaper.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Whitepaper
-          </ItemAnchor>
         </Item>
         <Item>
           <ItemLink to="/about">About</ItemLink>
