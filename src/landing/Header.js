@@ -148,13 +148,13 @@ class Header extends React.Component<Props, State> {
             <Nav>
               <NavItem>
                 <NavItem>
-                  <NavAnchor
-                    href="/Whitepaper.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Whitepaper
-                  </NavAnchor>
+                  {/*<NavAnchor*/}
+                    {/*href="/Whitepaper.pdf"*/}
+                    {/*target="_blank"*/}
+                    {/*rel="noopener noreferrer"*/}
+                  {/*>*/}
+                    {/*Whitepaper*/}
+                  {/*</NavAnchor>*/}
                 </NavItem>
                 <NavItem>
                   <NavLink to="/about">About</NavLink>
