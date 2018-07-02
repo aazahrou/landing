@@ -59,7 +59,7 @@ const ItemLink = styled(Link)`
   `};
 `;
 
-const ItemAnchor = ItemLink.withComponent('a');
+// const ItemAnchor = ItemLink.withComponent('a');
 
 const SocialContainer = styled.div`
   text-align: center;
