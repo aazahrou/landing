@@ -36,6 +36,7 @@ const trackAppleAppLinkClick = () => {
 };
 
 const StyledButton = Button.extend`
+  display: flex;
   padding-left: 20px;
   padding-right: 20px;
   @media only screen and (max-device-width: 480px){
