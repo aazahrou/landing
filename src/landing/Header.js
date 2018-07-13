@@ -157,6 +157,9 @@ class Header extends React.Component<Props, State> {
                   {/*</NavAnchor>*/}
                 </NavItem>
                 <NavItem>
+                  <NavLink to="https://support.getchange.com/" target="_blank">Support</NavLink>
+                </NavItem>
+                <NavItem>
                   <NavLink to="/about">About</NavLink>
                 </NavItem>
                 <NavLink to="/careers" color="blue">
