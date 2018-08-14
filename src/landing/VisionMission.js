@@ -67,7 +67,7 @@ export const VisionMission = () => (
           <GradientText>Vision</GradientText>
         </Heading>
         <Body>
-          <p>To build an open financial world.</p>
+          <p>Change will build a democratic financial system.</p>
           <Buttons />
         </Body>
       </Column>

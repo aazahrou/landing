@@ -127,7 +127,7 @@ export const Footer = () => (
           </ItemLink>
         </Item>
         <Item>
-          <ItemLink to="https://medium.com/changefinance" target="_blank">
+          <ItemLink to="https://blog.getchange.com/" target="_blank">
             Blog
           </ItemLink>
         </Item>
