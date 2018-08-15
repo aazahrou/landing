@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 import svgFacebook from './img/social/facebook.svg';
-import svgMedium from './img/social/medium.svg';
 
 import svgTelegram from './img/social/telegram.svg';
 import svgTwitter from './img/social/twitter.svg';
@@ -74,11 +73,6 @@ export const SocialIcons = () => (
             target="_blank"
           >
             <IconImage src={svgYouTube} alt="YouTube" />
-          </Link>
-        </Icon>
-        <Icon>
-          <Link to="https://medium.com/changefinance" target="_blank">
-            <IconImage src={svgMedium} alt="Medium" />
           </Link>
         </Icon>
       </Icons>

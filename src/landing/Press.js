@@ -11,8 +11,6 @@ import logoCoinTelegraph from './img/press/coin-telegraph.png';
 
 import logoE27 from './img/press/e27.png';
 import logoEPL from './img/press/epl.png';
-import logoFintechSingapore from './img/press/fintech-singapore.png';
-import logoFoxNews from './img/press/fox-news.png';
 import logoMarketWatch from './img/press/market-watch.png';
 import logoYahooFinance from './img/press/yahoo-finance.png';
 
@@ -36,12 +34,6 @@ export const Press = () => (
           link: 'http://bit.ly/2k8jxSz',
         },
         {
-          name: 'Fintech Singapore',
-          image: logoFintechSingapore,
-          link:
-            'http://fintechnews.sg/1483/roboadvisor/smartly-sg-announces-robo-advisor-targeted-southeast-asian-millennials/',
-        },
-        {
           name: 'Yahoo! Finance',
           image: logoYahooFinance,
           link:
@@ -57,13 +49,13 @@ export const Press = () => (
           name: 'Business Insider',
           image: logoBusinessInsider,
           link:
-            'http://markets.businessinsider.com/news/stocks/Change-the-first-decentralised-crypto-bank-for-e-residents-1002305938',
+            'https://markets.businessinsider.com/news/stocks/cryptocurrency-based-company-change-launches-bitcoin-app-with-no-trading-fees-1027376720',
         },
         {
           name: 'BBC',
           image: logoBBC,
           link:
-            'https://medium.com/@changebank/change-banks-ceo-on-bbc-world-news-2be5cc831744',
+            'https://blog.getchange.com/changes-ceo-on-bbc-world-news/',
         },
         { name: 'ABC', image: logoABC },
         {
@@ -73,16 +65,10 @@ export const Press = () => (
             'http://digileht.epl.delfi.ee/arileht/eestlased-muudavad-singapuris-panganduse-tulevikku?id=76768158',
         },
         {
-          name: 'Fox News',
-          image: logoFoxNews,
-          link:
-            'http://www.wflx.com/story/36284232/change-the-first-decentralised-crypto-bank-for-e-residents',
-        },
-        {
           name: 'MarketWatch',
           image: logoMarketWatch,
           link:
-            'http://www.marketwatch.com/story/change---the-first-decentralised-crypto-bank-for-e-residents-2017-09-04',
+            'https://www.marketwatch.com/press-release/cryptocurrency-based-company-change-launches-bitcoin-app-with-no-trading-fees-2018-07-18',
         },
         {
           name: 'Channel NewsAsia',
