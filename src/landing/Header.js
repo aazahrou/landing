@@ -169,11 +169,11 @@ class Header extends React.Component<Props, State> {
                   We are hiring!
                 </NavLink>
               </NavItem>
-              <NavItem marginLeft>
-                <AnchorButton href={config.get('appUrl')} color="blue" size="small">
-                  Sign up
-                </AnchorButton>
-              </NavItem>
+              {/*<NavItem marginLeft>*/}
+                {/*<AnchorButton href={config.get('appUrl')} color="blue" size="small">*/}
+                  {/*Sign up*/}
+                {/*</AnchorButton>*/}
+              {/*</NavItem>*/}
             </Nav>
           </RightNavContainer>
 
