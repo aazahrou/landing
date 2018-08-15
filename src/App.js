@@ -33,6 +33,7 @@ export const App = () => (
           <Route path="/careers" component={Landing} />
           <Route path="/legal" component={Landing} />
           <Route path="/notify-me-success" component={Landing} />
+          <Route path="/security-token-offering" component={Landing} />
         </Switch>
       </BrowserRouter>
     </ThemeProvider>

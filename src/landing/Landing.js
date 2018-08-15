@@ -12,6 +12,7 @@ import Header from './Header';
 import Home from './Home';
 import NotifyMeSuccess from './NotifyMeSuccess';
 import PrivacyPolicy from './PrivacyPolicy';
+import { SecurityTokenOffering } from './SecurityTokenOffering';
 
 import ScrollToTop from './ScrollToTop';
 import TermsAndConditions from './TermsAndConditions';
@@ -77,6 +78,7 @@ class Landing extends React.Component<Props, State> {
             <Route path="/legal/privacy-policy" component={PrivacyPolicy} />
             <Route path="/legal/definitions" component={LegalDefinitions} />
             <Route path="/notify-me-success" component={NotifyMeSuccess} />
+            <Route path="/security-token-offering" component={SecurityTokenOffering} />
             <Route path="/" component={Home} />
           </Switch>
 

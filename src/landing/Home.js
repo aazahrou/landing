@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import IntercomBubble from './IntercomBubble';
 import Card from './Card';
+import Securities from './Securities';
 import CreateYourAccount from './CreateYourAccount';
 import Hero from './Hero';
 import Press from './Press';
@@ -24,6 +25,7 @@ export const Home = () => (
       <Hero />
       <Wallet />
       <Card />
+      <Securities />
       <Pricing />
       <PriceComparisonTable />
       <CreateYourAccount />
