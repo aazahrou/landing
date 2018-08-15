@@ -4,11 +4,11 @@ import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
-import config from 'react-global-configuration';
+// import config from 'react-global-configuration';
 
 import Logo from './Logo';
 
-import { AnchorButton } from './ui';
+// import { AnchorButton } from './ui';
 
 import variables from '../ui/variables';
 
