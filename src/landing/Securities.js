@@ -14,27 +14,40 @@ import { Button } from './ui';
 import variables from '../ui/variables';
 
 const Container = styled.div`
-  margin-bottom: 96px;
-  ${breakpoint('tablet')`
-    margin-bottom: 240px;
-  `};
-`;
-
-const InnerContainer = styled.div`
-  text-align: center;
+  margin-bottom: 60px;
   ${breakpoint('tablet')`
     width: 960px;
-    margin: 0 auto;
+    margin: 0 auto 120px;
+  `};
+  ${breakpoint('desktop')`
+    width: 1152px;
   `};
 `;
 
 const TextContainer = styled.div`
   padding: 0 24px;
+  text-align: center;
   ${breakpoint('tablet')`
-    text-align: center;
+    text-align: left;
     padding: 0;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 110px auto;
+  `};
+`;
+
+const InnerContainer = styled.div`
+  padding: 0 24px;
+  ${breakpoint('tablet')`
+    display: flex;
+    padding: 0;
+  `};
+`;
+
+const Column = styled.div`
+  margin-bottom: 36px;
+  ${breakpoint('tablet')`
+    flex: 0 0 50%;
+    padding-right: 48px;
   `};
 `;
 
@@ -67,7 +80,7 @@ const Small = styled.div`
   font-family: ${variables.fontSecondary};
   line-height: 1.5;
   font-size: ${variables.fontSizeSmall};  
-  margin-bottom: 10px;
+  margin-top: 40px;
 `;
 
 const Highlight = styled.div`
@@ -83,7 +96,13 @@ const Highlight = styled.div`
 `;
 
 const Image = styled.img`
+  justify-content: center;
   width: 300px;
+  display: none;
+  margin-left: 150px;
+  ${breakpoint('tablet')`
+    display: initial;
+  `};  
 `;
 
 const FadeTransition = styled.div`
@@ -91,8 +110,8 @@ const FadeTransition = styled.div`
   transition: all 0.9s;
   ${props => props.delay && `transition-delay: ${props.delay}ms`};
   ${props =>
-    (props.state === 'entering' || props.state === 'entered') &&
-    `
+  (props.state === 'entering' || props.state === 'entered') &&
+  `
     opacity: 1;
   `};
 `;
@@ -104,84 +123,83 @@ type State = {
   isTextVisible: boolean,
 };
 
-class Securities extends React.Component<Props, State> {
+export class Securities extends React.Component<Props, State> {
   state = {
     isCardVisible: false,
     isTextVisible: false,
   };
 
   handleCardEnter = () => {
-    this.setState({ isCardVisible: true });
+    this.setState({isCardVisible: true});
   };
 
   handleCardLeave = () => {
-    this.setState({ isCardVisible: false });
+    this.setState({isCardVisible: false});
   };
 
   handleTextEnter = () => {
-    this.setState({ isTextVisible: true });
+    this.setState({isTextVisible: true});
   };
 
   handleTextLeave = () => {
-    this.setState({ isTextVisible: false });
+    this.setState({isTextVisible: false});
   };
 
   render() {
     return (
       <ScrollToTarget hash="#equity-tokens" pos="center">
         <Container>
-          <InnerContainer>
-            <Waypoint
-              onEnter={this.handleCardEnter}
-              onLeave={this.handleCardLeave}
-              topOffset="5%"
-              bottomOffset="20%"
-            >
-              <Image src={photo} alt="" />
-            </Waypoint>
-            <Waypoint
-              onEnter={this.handleTextEnter}
-              onLeave={this.handleTextLeave}
-              topOffset="5%"
-              bottomOffset="20%"
-            >
-              <TextContainer>
-                <Transition in={this.state.isTextVisible} timeout={2000}>
-                  {state => (
-                    <div>
-                      <FadeTransition state={state} delay={0}>
-                        <Highlight>
-                          <GradientText>Coming soon</GradientText>
-                        </Highlight>
-                      </FadeTransition>
-                      <FadeTransition state={state} delay={150}>
-                        <Heading>Invest in Equity Tokens*</Heading>
-                      </FadeTransition>
-                      <FadeTransition state={state} delay={300}>
-                        <Body>
+        <InnerContainer>
+          <Column>
+            <Body>
+            <InnerContainer>
+              <Waypoint
+                onEnter={this.handleTextEnter}
+                onLeave={this.handleTextLeave}
+                topOffset="5%"
+                bottomOffset="20%"
+              >
+                <TextContainer>
+                  <Transition in={this.state.isTextVisible} timeout={2000}>
+                    {state => (
+                      <div>
+                        <FadeTransition state={state} delay={0}>
+                          <Highlight>
+                            <GradientText>Coming soon</GradientText>
+                          </Highlight>
+                        </FadeTransition>
+                        <FadeTransition state={state} delay={150}>
+                          <Heading>Invest in Equity Tokens*</Heading>
+                        </FadeTransition>
+                        <FadeTransition state={state} delay={300}>
+                          <Body>
                           Change will let you invest in companies and funds via equity tokens*,
                           which contractually represent the ownership of the company.
-                        </Body>
-                        <Small>
-                          * Investors will hold a tokenized loan contract of the SPV
-                          which owns the equity of the respective project company.
-                        </Small>
-                      </FadeTransition>
-                      <FadeTransition state={state} delay={450}>
-                        <a href="/security-token-offering">
-                          <Button color="gradient">Sign up as a company</Button>
-                        </a>
-                      </FadeTransition>
-                    </div>
-                  )}
-                </Transition>
-              </TextContainer>
-            </Waypoint>
-          </InnerContainer>
-        </Container>
+                          </Body>
+                        </FadeTransition>
+                        <FadeTransition state={state} delay={450}>
+                          <a href="/security-token-offering">
+                            <Button color="gradient">Sign up as a company</Button>
+                          </a>
+                          <Small>
+                            * Investors will hold a tokenized loan contract of the SPV
+                            which owns the equity of the respective project company.
+                          </Small>
+                        </FadeTransition>
+                      </div>
+                    )}
+                  </Transition>
+                </TextContainer>
+              </Waypoint>
+            </InnerContainer>
+            </Body>
+          </Column>
+          <Column>
+            <Image src={photo} alt=""/>
+          </Column>
+        </InnerContainer>
+      </Container>
       </ScrollToTarget>
     );
   }
-}
-
-export default Securities;
+};

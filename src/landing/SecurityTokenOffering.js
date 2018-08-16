@@ -78,7 +78,8 @@ const Background = styled.div`
 
 const BackgroundImage = styled.img`
   ${breakpoint('tablet')`
-    width: 100%;
+    width: 300px;
+    margin-left: 110px;
   `};
 `;
 
