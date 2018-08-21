@@ -151,7 +151,6 @@ export class Securities extends React.Component<Props, State> {
         <Container>
         <InnerContainer>
           <Column>
-            <Body>
             <InnerContainer>
               <Waypoint
                 onEnter={this.handleTextEnter}
@@ -192,7 +191,6 @@ export class Securities extends React.Component<Props, State> {
                 </TextContainer>
               </Waypoint>
             </InnerContainer>
-            </Body>
           </Column>
           <Column>
             <Image src={photo} alt=""/>
