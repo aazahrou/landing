@@ -163,6 +163,9 @@ class Header extends React.Component<Props, State> {
                   <NavLink to="https://support.getchange.com/" target="_blank">Support</NavLink>
                 </NavItem>
                 <NavItem>
+                  <NavLink to="https://blog.getchange.com/" target="_blank">Blog</NavLink>
+                </NavItem>
+                <NavItem>
                   <NavLink to="/about">About</NavLink>
                 </NavItem>
                 <NavLink to="/careers" color="blue">
