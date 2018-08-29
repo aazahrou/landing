@@ -83,7 +83,7 @@ class CreateYourAccount extends React.Component<Props> {
       <Container>
         <InnerContainer>
           <TextContainer>
-            <Heading>Create your free account in 5 minutes</Heading>
+            <Heading>Create Your Free Account In 5 Minutes</Heading>
             <Body>
               <p>
                 Open your Change account from your smartphone, free of charge.
