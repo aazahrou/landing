@@ -5,7 +5,7 @@ import Waypoint from 'react-waypoint';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 import GradientText from './GradientText';
-
+import Disclaimer from './Disclaimer';
 import photo from './img/background-security-token-offering.jpg';
 
 import ScrollToTarget from './ScrollToTarget';
@@ -164,7 +164,7 @@ export class Securities extends React.Component<Props, State> {
                       <div>
                         <FadeTransition state={state} delay={0}>
                           <Highlight>
-                            <GradientText>Coming soon</GradientText>
+                            <GradientText>Coming Soon</GradientText>
                           </Highlight>
                         </FadeTransition>
                         <FadeTransition state={state} delay={150}>
@@ -172,7 +172,9 @@ export class Securities extends React.Component<Props, State> {
                         </FadeTransition>
                         <FadeTransition state={state} delay={300}>
                           <Body>
-                          Change will let you invest in companies and funds via equity tokens*,
+                          Change will let you invest in companies and funds via equity tokens
+                          <Disclaimer>Investors will hold a tokenized loan contract of the SPV
+                            which owns the equity of the respective project company.</Disclaimer>,
                           which contractually represent the ownership of the company.
                           </Body>
                         </FadeTransition>
@@ -180,10 +182,6 @@ export class Securities extends React.Component<Props, State> {
                           <a href="/security-token-offering">
                             <Button color="gradient">Sign up as a company</Button>
                           </a>
-                          <Small>
-                            * Investors will hold a tokenized loan contract of the SPV
-                            which owns the equity of the respective project company.
-                          </Small>
                         </FadeTransition>
                       </div>
                     )}

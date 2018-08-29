@@ -5,7 +5,7 @@ import breakpoint from 'styled-components-breakpoint';
 import IntercomBubble from './IntercomBubble';
 import variables from '../ui/variables';
 import { Button } from './ui';
-
+import Disclaimer from './Disclaimer';
 import background from './img/background-security-token-offering.jpg';
 
 const Container = styled.div`
@@ -116,7 +116,9 @@ export const SecurityTokenOffering = class SecurityTokenOffering extends React.C
               Want to launch an Equity Token* Offering on Change platform?
             </IntroHeading>
             <IntroBody>
-              Change will provide an Equity Token* Offering platform
+              Change will provide an Equity Token
+              <Disclaimer>Investors will hold a tokenized loan contract of the SPV
+              which owns the equity of the respective project company.</Disclaimer> Offering platform
               with trading functionality.
               Investors will go through KYC and AML checks.
               This facilitates source of funds verification and certainty in future banking relations.
@@ -135,10 +137,6 @@ export const SecurityTokenOffering = class SecurityTokenOffering extends React.C
                 <Button color="gradient">Sign up</Button>
               </a>
             </IntroBody>
-            <Small>
-              * Investors will hold a tokenized loan contract of the SPV
-              which owns the equity of the respective project company.
-            </Small>
             <Background>
               <BackgroundImage src={background} alt="" />
             </Background>
