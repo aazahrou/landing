@@ -10,6 +10,7 @@ import Careers from './Careers';
 import Footer from './Footer';
 import Header from './Header';
 import Home from './Home';
+import AppPlaceholder from './AppPlaceholder'
 import NotifyMeSuccess from './NotifyMeSuccess';
 import PrivacyPolicy from './PrivacyPolicy';
 import { SecurityTokenOffering } from './SecurityTokenOffering';
@@ -79,6 +80,7 @@ class Landing extends React.Component<Props, State> {
             <Route path="/legal/definitions" component={LegalDefinitions} />
             <Route path="/notify-me-success" component={NotifyMeSuccess} />
             <Route path="/security-token-offering" component={SecurityTokenOffering} />
+            <Route path="/app-download" component={AppPlaceholder} />
             <Route path="/" component={Home} />
           </Switch>
 
