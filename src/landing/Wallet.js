@@ -94,7 +94,7 @@ class Wallet extends React.Component<Props, State> {
                 <InnerContainer>
                   <FadeTransition state={state} delay={0} />
                   <FadeTransition state={state} delay={150}>
-                    <Heading>Free cryptocurrency wallet</Heading>
+                    <Heading>Free Cryptocurrency Wallet</Heading>
                   </FadeTransition>
                   <FadeTransition state={state} delay={300}>
                     <Body>

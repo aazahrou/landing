@@ -228,7 +228,7 @@ class Card extends React.Component<Props, State> {
                     <div>
                       <FadeTransition state={state} delay={0}>
                         <Highlight>
-                          <GradientText>Available for pre-order</GradientText>
+                          <GradientText>Available For Pre-order</GradientText>
                         </Highlight>
                       </FadeTransition>
                       <FadeTransition state={state} delay={150}>

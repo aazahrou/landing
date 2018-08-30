@@ -43,7 +43,7 @@ class Landing extends React.Component<Props, State> {
   };
 
   componentDidMount() {
-    document.title = 'Change – your blockchain-based mobile finance app';
+    document.title = 'Change – Your Blockchain-based Mobile Finance App';
   }
 
   handleWaypointEnter = (props: WaypointProps) => {

@@ -125,7 +125,7 @@ class Hero extends React.Component<Props, State> {
             {state => (
               <WordsTransition state={state}>
                 <WordsHeading>
-                  <GradientText>Buy and trade commission-free:</GradientText>
+                  <GradientText>Buy and Trade Commission-free:</GradientText>
                 </WordsHeading>
                 <HeroWords words={['bitcoin', 'ether', 'litecoin', 'ripple']} />
               </WordsTransition>
