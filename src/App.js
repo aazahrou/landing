@@ -34,7 +34,7 @@ export const App = () => (
           <Route path="/legal" component={Landing} />
           <Route path="/notify-me-success" component={Landing} />
           <Route path="/security-token-offering" component={Landing} />
-          <Route path="/app-download" component={Landing} />
+          <Route path="/app" component={Landing} />
         </Switch>
       </BrowserRouter>
     </ThemeProvider>
