@@ -75,14 +75,6 @@ const Body = styled.div`
   `};
 `;
 
-const Small = styled.div`
-  color: ${variables.colorNeutral};
-  font-family: ${variables.fontSecondary};
-  line-height: 1.5;
-  font-size: ${variables.fontSizeSmall};  
-  margin-top: 40px;
-`;
-
 const Highlight = styled.div`
   font-family: ${variables.fontPrimary};
   font-size: ${variables.fontSizeLarge};
