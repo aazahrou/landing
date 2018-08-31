@@ -98,14 +98,6 @@ const NavLink = styled.div`
   `};
 `;
 
-const Small = styled.div`
-  color: ${variables.colorNeutral};
-  font-family: ${variables.fontSecondary};
-  line-height: 1.5;
-  font-size: ${variables.fontSizeSmall};  
-  margin-bottom: 10px;
-`;
-
 export const SecurityTokenOffering = class SecurityTokenOffering extends React.Component<{}> {
   render() {
     return (
