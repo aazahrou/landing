@@ -131,6 +131,11 @@ export const Footer = () => (
             Blog
           </ItemLink>
         </Item>
+        <Item>
+          <ItemLink to="/office-rent">
+            Office rent
+          </ItemLink>
+        </Item>
       </ItemsContainer>
 
       <SocialContainer>

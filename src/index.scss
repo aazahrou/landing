@@ -35,6 +35,9 @@
   src: url('fonts/favorit-bold.woff') format('woff');
 }
 
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 body {
   font-family: OpenSans, Fallback, sans-serif;
   font-size: 16px;

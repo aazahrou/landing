@@ -1,0 +1,10 @@
+<testsuites name="jest tests" tests="2" failures="0" time="7.372">
+  <testsuite name="Intercom bubble component" errors="0" failures="0" skipped="0" timestamp="2018-09-16T16:55:03" time="1.933" tests="1">
+    <testcase classname="Intercom bubble component renders the component" name="Intercom bubble component renders the component" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2018-09-16T16:55:03" time="5.152" tests="1">
+    <testcase classname=" renders without crashing" name=" renders without crashing" time="0.236">
+    </testcase>
+  </testsuite>
+</testsuites>
