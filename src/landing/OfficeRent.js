@@ -232,28 +232,44 @@ const Photos = () => {
   return <PhotosContainer>
     <Slider {...settings}>
       <div>
-        <img src={img1} height="300" alt="Office" />
+        <a href={img1} target="_blank" rel="noopener noreferrer">
+          <img src={img1} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img2} height="300" alt="Office" />
+        <a href={img2} target="_blank" rel="noopener noreferrer">
+          <img src={img2} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img3} height="300" alt="Office" />
+        <a href={img3} target="_blank" rel="noopener noreferrer">
+          <img src={img3} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img4} height="300" alt="Office" />
+        <a href={img4} target="_blank" rel="noopener noreferrer">
+          <img src={img4} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img5} height="300" alt="Office" />
+        <a href={img5} target="_blank" rel="noopener noreferrer">
+          <img src={img5} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img6} height="300" alt="Office" />
+        <a href={img6} target="_blank" rel="noopener noreferrer">
+          <img src={img6} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img7} height="300" alt="Office" />
+        <a href={img7} target="_blank" rel="noopener noreferrer">
+          <img src={img7} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img8} height="300" alt="Office" />
+        <a href={img8} target="_blank" rel="noopener noreferrer">
+          <img src={img8} height="300" alt="Office" />
+        </a>
       </div>
     </Slider>
   </PhotosContainer>
