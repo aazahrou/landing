@@ -201,7 +201,7 @@ function CustomNextArrow(props: any) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "flex", "justify-content": "center", background: "#eee" }}
+      style={{ ...style, display: "flex", "justify-content": "center", background: "#000" }}
       onClick={onClick}
     />
   );
@@ -212,7 +212,7 @@ function CustomPrevArrow(props: any) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "flex", "justify-content": "center", background: "#eee" }}
+      style={{ ...style, display: "flex", "justify-content": "center", background: "#000" }}
       onClick={onClick}
     />
   );
