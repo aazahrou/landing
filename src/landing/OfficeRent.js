@@ -191,14 +191,14 @@ const Features = () => (
       <li>EU House, Rävala Avenue 4</li>
       <li>9th and 10th floor</li>
       <li>209 m2 office space + 500 m2 roof terrace + 100 m2 chill area</li>
-      <li>18.5 EUR/m2. Common areas and terrace free of charge.</li>
+      <li>18 EUR/m2. Common areas and terrace free of charge.</li>
       <li>In renovation, available from mid November 2018.</li>
     </Bullets>
     <br /><br />
     <FeatureSet>
       <Feature title="Modern industrial style" description="Bright and spacious modern industrial style done by an interior designer. High-quality materials used." />
       <Feature title="Two floors" description="Office through 9th and 10th floor of the EU house. First floor working spaces and kitchen area and second mezzanine floor with meeting rooms." />
-      <Feature title="Best views in Tallinn" description="Full-length windows on two sides offering unforgettable views of old town and central business district." />
+      <Feature title="Best views" description="Full-length windows on two sides offering unforgettable views of old town and central business district." />
       <Feature title="Central location" description="Next to Viru Keskus in the core center of Tallinn where everything is walking distance." />
       <Feature title="High-end office building" description="One of the most luxurious office buildings in town in the middle of Tornimäe financial district." />
       <Feature title="Always secure" description="24/7 administrator in the building, floor access for only 2 companies secured with digital access passes and cameras over entrances." />
@@ -217,7 +217,7 @@ function CustomNextArrow(props: any) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "flex", "justify-content": "center", background: "#eee" }}
+      style={{ ...style, display: "flex", "justify-content": "center", background: "#000" }}
       onClick={onClick}
     />
   );
@@ -228,7 +228,7 @@ function CustomPrevArrow(props: any) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "flex", "justify-content": "center", background: "#eee" }}
+      style={{ ...style, display: "flex", "justify-content": "center", background: "#000" }}
       onClick={onClick}
     />
   );
@@ -248,28 +248,44 @@ const Photos = () => {
   return <PhotosContainer>
     <Slider {...settings}>
       <div>
-        <img src={img1} height="300" alt="Office" />
+        <a href={img1} target="_blank" rel="noopener noreferrer">
+          <img src={img1} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img2} height="300" alt="Office" />
+        <a href={img2} target="_blank" rel="noopener noreferrer">
+          <img src={img2} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img3} height="300" alt="Office" />
+        <a href={img3} target="_blank" rel="noopener noreferrer">
+          <img src={img3} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img4} height="300" alt="Office" />
+        <a href={img4} target="_blank" rel="noopener noreferrer">
+          <img src={img4} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img5} height="300" alt="Office" />
+        <a href={img5} target="_blank" rel="noopener noreferrer">
+          <img src={img5} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img6} height="300" alt="Office" />
+        <a href={img6} target="_blank" rel="noopener noreferrer">
+          <img src={img6} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img7} height="300" alt="Office" />
+        <a href={img7} target="_blank" rel="noopener noreferrer">
+          <img src={img7} height="300" alt="Office" />
+        </a>
       </div>
       <div>
-        <img src={img8} height="300" alt="Office" />
+        <a href={img8} target="_blank" rel="noopener noreferrer">
+          <img src={img8} height="300" alt="Office" />
+        </a>
       </div>
     </Slider>
   </PhotosContainer>
