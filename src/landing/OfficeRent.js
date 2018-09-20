@@ -175,14 +175,14 @@ const Features = () => (
       <li>EU House, Rävala Avenue 4</li>
       <li>9th and 10th floor</li>
       <li>209 m2 office space + 500 m2 roof terrace + 100 m2 chill area</li>
-      <li>18.5 EUR/m2. Common areas and terrace free of charge.</li>
+      <li>18 EUR/m2. Common areas and terrace free of charge.</li>
       <li>In renovation, available from mid November 2018.</li>
     </ul>
     <br />
     <FeatureSet>
       <Feature title="Modern industrial style" description="Bright and spacious modern industrial style done by an interior designer. High-quality materials used." />
       <Feature title="Two floors" description="Office through 9th and 10th floor of the EU house. First floor working spaces and kitchen area and second mezzanine floor with meeting rooms." />
-      <Feature title="Best views in Tallinn" description="Full-length windows on two sides offering unforgettable views of old town and central business district." />
+      <Feature title="Best views" description="Full-length windows on two sides offering unforgettable views of old town and central business district." />
       <Feature title="Central location" description="Next to Viru Keskus in the core center of Tallinn where everything is walking distance." />
       <Feature title="High-end office building" description="One of the most luxurious office buildings in town in the middle of Tornimäe financial district." />
       <Feature title="Always secure" description="24/7 administrator in the building, floor access for only 2 companies secured with digital access passes and cameras over entrances." />
