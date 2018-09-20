@@ -50,25 +50,23 @@ const WhiteHeading = styled.h1`
 
 const BlackHeading = styled.h1`
   font-family: OpenSans;
-  font-size: 30px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1;
-  letter-spacing: -1px;
-  color: #333;
+  line-height: normal;
+  letter-spacing: normal;
   padding-top: 15px;
 `;
 
 const BlackParagraph = styled.p`
   font-family: OpenSans;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #333;
   text-align: justify;
 `;
 
@@ -153,6 +151,25 @@ const PhotosContainer = styled.div`
   max-height: 350px;
 `;
 
+
+const Bullets = styled.ul`
+  margin: 0 auto;
+
+  li {
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+`;
+
+const MoreInfoContainer = styled.div`
+  margin-top: 40px;
+`;
+
 const Header = () => (
   <HeaderContainer>
     <WhiteSubHeading>Looking for an office to rent?</WhiteSubHeading>
@@ -163,22 +180,21 @@ const Header = () => (
 
 const Feature = (props: any) => (
   <FeatureContainer>
-    <img src={checkImg} height="15" alt="Check" />
-    <FeatureTitle>{props.title}</FeatureTitle>
+    <FeatureTitle><img src={checkImg} height="15" alt="Check" /> {props.title}</FeatureTitle>
     <FeatureDescription>{props.description}</FeatureDescription>
   </FeatureContainer>
 );
 
 const Features = () => (
   <FeaturesContainer>
-    <ul>
+    <Bullets>
       <li>EU House, Rävala Avenue 4</li>
       <li>9th and 10th floor</li>
       <li>209 m2 office space + 500 m2 roof terrace + 100 m2 chill area</li>
       <li>18.5 EUR/m2. Common areas and terrace free of charge.</li>
       <li>In renovation, available from mid November 2018.</li>
-    </ul>
-    <br />
+    </Bullets>
+    <br /><br />
     <FeatureSet>
       <Feature title="Modern industrial style" description="Bright and spacious modern industrial style done by an interior designer. High-quality materials used." />
       <Feature title="Two floors" description="Office through 9th and 10th floor of the EU house. First floor working spaces and kitchen area and second mezzanine floor with meeting rooms." />
@@ -260,7 +276,7 @@ const Photos = () => {
 };
 
 const MoreInfo = () => (
-  <div>
+  <MoreInfoContainer>
     <BlackHeading>EU House</BlackHeading>
     <BlackParagraph>The contemporary 10-storey office building, constructed in 2006, was designed by a prominent architectural bureau Alver & Trummal and has an outstanding architectural design unique in the city of Tallinn.</BlackParagraph>
 
@@ -273,7 +289,7 @@ const MoreInfo = () => (
 
     <BlackHeading>Conditions</BlackHeading>
     <BlackParagraph>Rental period is 1 year, with an opportunity to extend for 1 year. The office is unfurnished, except from the kitchen.</BlackParagraph>
-  </div>
+  </MoreInfoContainer>
 );
 
 const OfficeRent = () => (
