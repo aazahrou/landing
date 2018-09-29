@@ -4,11 +4,8 @@ import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
-// import config from 'react-global-configuration';
 
 import Logo from './Logo';
-
-// import { AnchorButton } from './ui';
 
 import variables from '../ui/variables';
 
@@ -94,8 +91,6 @@ const NavLink = styled(Link) `
   `};
 `;
 
-// const NavAnchor = NavLink.withComponent('a');
-
 type Props = {
   location: Object,
   withBackground: ?boolean,
@@ -136,9 +131,6 @@ class Header extends React.Component<Props, State> {
                 <NavLink to="/#wallet">Wallet</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/#card">Card</NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink to="/#pricing">Pricing</NavLink>
               </NavItem>
             </Nav>
@@ -147,15 +139,6 @@ class Header extends React.Component<Props, State> {
           <RightNavContainer>
             <Nav>
               <NavItem>
-                <NavItem>
-                  {/*<NavAnchor*/}
-                    {/*href="/Whitepaper.pdf"*/}
-                    {/*target="_blank"*/}
-                    {/*rel="noopener noreferrer"*/}
-                  {/*>*/}
-                    {/*Whitepaper*/}
-                  {/*</NavAnchor>*/}
-                </NavItem>
                 <NavItem>
                   <NavLink to="https://support.getchange.com/" target="_blank">Support</NavLink>
                 </NavItem>
@@ -169,22 +152,11 @@ class Header extends React.Component<Props, State> {
                   We are hiring!
                 </NavLink>
               </NavItem>
-              {/*<NavItem marginLeft>*/}
-                {/*<AnchorButton href={config.get('appUrl')} color="blue" size="small">*/}
-                  {/*Sign up*/}
-                {/*</AnchorButton>*/}
-              {/*</NavItem>*/}
             </Nav>
           </RightNavContainer>
 
           <MobileNav>
-            <Nav>
-              {/*<NavItem>*/}
-                {/*<AnchorButton href={config.get('appUrl')} color="blue" size="small">*/}
-                  {/*Sign up*/}
-                {/*</AnchorButton>*/}
-              {/*</NavItem>*/}
-            </Nav>
+            <Nav></Nav>
           </MobileNav>
         </InnerContainer>
       </Container>
