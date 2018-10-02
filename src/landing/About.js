@@ -241,12 +241,6 @@ export const About = () => (
           image: imageRoger,
         },
         {
-          name: 'Lesly Goh',
-          title: 'CTO at World Bank',
-          linkedin: 'http://bit.ly/2ic9yLm',
-          image: imageLesly,
-        },
-        {
           name: 'Miguel Soriano',
           title: 'Professor at the National University of Singapore',
           linkedin: 'http://bit.ly/2jrTwcZ',
