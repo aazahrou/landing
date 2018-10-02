@@ -19,7 +19,6 @@ import imageHelen from './img/people/helen.jpg';
 import imageJordan from './img/people/jordan.jpg';
 import imageErko from './img/people/erko.jpg';
 import imageKristjan from './img/people/kristjan.jpg';
-import imageLesly from './img/people/lesly.jpg';
 import imageMiguel from './img/people/miguel.jpg';
 import imageCofi from './img/people/cofi.jpg';
 import imageRoger from './img/people/roger.jpg';
